@@ -1,0 +1,1667 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=/home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.onnx --saveEngine=/home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.trt --verbose --dumpProfile --separateProfileRun --tacticSources=-CUDNN,-CUBLAS_LT,-CUBLAS --workspace=2048
+[11/08/2024-09:04:17] [I] === Model Options ===
+[11/08/2024-09:04:17] [I] Format: ONNX
+[11/08/2024-09:04:17] [I] Model: /home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.onnx
+[11/08/2024-09:04:17] [I] Output:
+[11/08/2024-09:04:17] [I] === Build Options ===
+[11/08/2024-09:04:17] [I] Max batch: explicit batch
+[11/08/2024-09:04:17] [I] Workspace: 2048 MiB
+[11/08/2024-09:04:17] [I] minTiming: 1
+[11/08/2024-09:04:17] [I] avgTiming: 8
+[11/08/2024-09:04:17] [I] Precision: FP32
+[11/08/2024-09:04:17] [I] Calibration: 
+[11/08/2024-09:04:17] [I] Refit: Disabled
+[11/08/2024-09:04:17] [I] Sparsity: Disabled
+[11/08/2024-09:04:17] [I] Safe mode: Disabled
+[11/08/2024-09:04:17] [I] DirectIO mode: Disabled
+[11/08/2024-09:04:17] [I] Restricted mode: Disabled
+[11/08/2024-09:04:17] [I] Save engine: /home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.trt
+[11/08/2024-09:04:17] [I] Load engine: 
+[11/08/2024-09:04:17] [I] Profiling verbosity: 0
+[11/08/2024-09:04:17] [I] Tactic sources: cublas [OFF], cublasLt [OFF], cudnn [OFF], 
+[11/08/2024-09:04:17] [I] timingCacheMode: local
+[11/08/2024-09:04:17] [I] timingCacheFile: 
+[11/08/2024-09:04:17] [I] Input(s)s format: fp32:CHW
+[11/08/2024-09:04:17] [I] Output(s)s format: fp32:CHW
+[11/08/2024-09:04:17] [I] Input build shapes: model
+[11/08/2024-09:04:17] [I] Input calibration shapes: model
+[11/08/2024-09:04:17] [I] === System Options ===
+[11/08/2024-09:04:17] [I] Device: 0
+[11/08/2024-09:04:17] [I] DLACore: 
+[11/08/2024-09:04:17] [I] Plugins:
+[11/08/2024-09:04:17] [I] === Inference Options ===
+[11/08/2024-09:04:17] [I] Batch: Explicit
+[11/08/2024-09:04:17] [I] Input inference shapes: model
+[11/08/2024-09:04:17] [I] Iterations: 10
+[11/08/2024-09:04:17] [I] Duration: 3s (+ 200ms warm up)
+[11/08/2024-09:04:17] [I] Sleep time: 0ms
+[11/08/2024-09:04:17] [I] Idle time: 0ms
+[11/08/2024-09:04:17] [I] Streams: 1
+[11/08/2024-09:04:17] [I] ExposeDMA: Disabled
+[11/08/2024-09:04:17] [I] Data transfers: Enabled
+[11/08/2024-09:04:17] [I] Spin-wait: Disabled
+[11/08/2024-09:04:17] [I] Multithreading: Disabled
+[11/08/2024-09:04:17] [I] CUDA Graph: Disabled
+[11/08/2024-09:04:17] [I] Separate profiling: Enabled
+[11/08/2024-09:04:17] [I] Time Deserialize: Disabled
+[11/08/2024-09:04:17] [I] Time Refit: Disabled
+[11/08/2024-09:04:17] [I] Skip inference: Disabled
+[11/08/2024-09:04:17] [I] Inputs:
+[11/08/2024-09:04:17] [I] === Reporting Options ===
+[11/08/2024-09:04:17] [I] Verbose: Enabled
+[11/08/2024-09:04:17] [I] Averages: 10 inferences
+[11/08/2024-09:04:17] [I] Percentile: 99
+[11/08/2024-09:04:17] [I] Dump refittable layers:Disabled
+[11/08/2024-09:04:17] [I] Dump output: Disabled
+[11/08/2024-09:04:17] [I] Profile: Enabled
+[11/08/2024-09:04:17] [I] Export timing to JSON file: 
+[11/08/2024-09:04:17] [I] Export output to JSON file: 
+[11/08/2024-09:04:17] [I] Export profile to JSON file: 
+[11/08/2024-09:04:17] [I] 
+[11/08/2024-09:04:17] [I] === Device Information ===
+[11/08/2024-09:04:17] [I] Selected Device: NVIDIA Tegra X2
+[11/08/2024-09:04:17] [I] Compute Capability: 6.2
+[11/08/2024-09:04:17] [I] SMs: 2
+[11/08/2024-09:04:17] [I] Compute Clock Rate: 1.3 GHz
+[11/08/2024-09:04:17] [I] Device Global Memory: 3834 MiB
+[11/08/2024-09:04:17] [I] Shared Memory per SM: 64 KiB
+[11/08/2024-09:04:17] [I] Memory Bus Width: 128 bits (ECC disabled)
+[11/08/2024-09:04:17] [I] Memory Clock Rate: 1.3 GHz
+[11/08/2024-09:04:17] [I] 
+[11/08/2024-09:04:17] [I] TensorRT version: 8.2.1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::GridAnchor_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::GridAnchorRect_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::NMS_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Reorg_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Region_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Clip_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::LReLU_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::PriorBox_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Normalize_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::ScatterND version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::RPROI_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::BatchedNMS_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::BatchedNMSDynamic_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::FlattenConcat_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::CropAndResize version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::DetectionLayer_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::EfficientNMS_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::EfficientNMS_ONNX_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::EfficientNMS_TFTRT_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Proposal version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::ProposalLayer_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::PyramidROIAlign_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::ResizeNearest_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::Split version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::SpecialSlice_TRT version 1
+[11/08/2024-09:04:17] [V] [TRT] Registered plugin creator - ::InstanceNormalization_TRT version 1
+[11/08/2024-09:04:19] [I] [TRT] [MemUsageChange] Init CUDA: CPU +266, GPU +0, now: CPU 269, GPU 3751 (MiB)
+[11/08/2024-09:04:20] [I] [TRT] [MemUsageSnapshot] Begin constructing builder kernel library: CPU 269 MiB, GPU 3735 MiB
+[11/08/2024-09:04:20] [I] [TRT] [MemUsageSnapshot] End constructing builder kernel library: CPU 299 MiB, GPU 3744 MiB
+[11/08/2024-09:04:20] [I] Start parsing network model
+[11/08/2024-09:04:20] [I] [TRT] ----------------------------------------------------------------
+[11/08/2024-09:04:20] [I] [TRT] Input filename:   /home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.onnx
+[11/08/2024-09:04:20] [I] [TRT] ONNX IR version:  0.0.6
+[11/08/2024-09:04:20] [I] [TRT] Opset version:    11
+[11/08/2024-09:04:20] [I] [TRT] Producer name:    pytorch
+[11/08/2024-09:04:20] [I] [TRT] Producer version: 2.4.1
+[11/08/2024-09:04:20] [I] [TRT] Domain:           
+[11/08/2024-09:04:20] [I] [TRT] Model version:    0
+[11/08/2024-09:04:20] [I] [TRT] Doc string:       
+[11/08/2024-09:04:20] [I] [TRT] ----------------------------------------------------------------
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::GridAnchor_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::GridAnchorRect_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::NMS_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Reorg_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Region_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Clip_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::LReLU_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::PriorBox_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Normalize_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::ScatterND version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::RPROI_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::BatchedNMS_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::BatchedNMSDynamic_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::FlattenConcat_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::CropAndResize version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::DetectionLayer_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::EfficientNMS_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::EfficientNMS_ONNX_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::EfficientNMS_TFTRT_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Proposal version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::ProposalLayer_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::PyramidROIAlign_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::ResizeNearest_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::Split version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::SpecialSlice_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Plugin creator already registered - ::InstanceNormalization_TRT version 1
+[11/08/2024-09:04:20] [V] [TRT] Adding network input: input with dtype: float32, dimensions: (1, 3, 128, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: input for ONNX tensor: input
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.0.fc_1_phone.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.0.fc_1_phone.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.0.fc_2_phone.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.0.fc_2_phone.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.1.fc_1_gaze.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.1.fc_1_gaze.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.1.fc_2_gaze.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.1.fc_2_gaze.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.2.fc_1_headset.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.2.fc_1_headset.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.2.fc_2_headset.weight
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: heads.2.fc_2_headset.bias
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_82
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_83
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_85
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_86
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_88
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_89
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_91
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_92
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_94
+[11/08/2024-09:04:20] [V] [TRT] Importing initializer: onnx::Conv_95
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /conv1/Conv [Conv]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: input
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_82
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_83
+[11/08/2024-09:04:20] [V] [TRT] /conv1/Conv [Conv] inputs: [input -> (1, 3, 128, 128)[FLOAT]], [onnx::Conv_82 -> (32, 3, 3, 3)[FLOAT]], [onnx::Conv_83 -> (32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Convolution input dimensions: (1, 3, 128, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /conv1/Conv for ONNX node: /conv1/Conv
+[11/08/2024-09:04:20] [V] [TRT] Using kernel: (3, 3), strides: (1, 1), prepadding: (1, 1), postpadding: (1, 1), dilations: (1, 1), numOutputs: 32
+[11/08/2024-09:04:20] [V] [TRT] Convolution output dimensions: (1, 32, 128, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /conv1/Conv_output_0 for ONNX tensor: /conv1/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /conv1/Conv [Conv] outputs: [/conv1/Conv_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Relu [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /conv1/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu [Relu] inputs: [/conv1/Conv_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Relu for ONNX node: /Relu
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Relu_output_0 for ONNX tensor: /Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu [Relu] outputs: [/Relu_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /conv2/Conv [Conv]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_85
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_86
+[11/08/2024-09:04:20] [V] [TRT] /conv2/Conv [Conv] inputs: [/Relu_output_0 -> (1, 32, 128, 128)[FLOAT]], [onnx::Conv_85 -> (32, 32, 3, 3)[FLOAT]], [onnx::Conv_86 -> (32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Convolution input dimensions: (1, 32, 128, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /conv2/Conv for ONNX node: /conv2/Conv
+[11/08/2024-09:04:20] [V] [TRT] Using kernel: (3, 3), strides: (1, 1), prepadding: (1, 1), postpadding: (1, 1), dilations: (1, 1), numOutputs: 32
+[11/08/2024-09:04:20] [V] [TRT] Convolution output dimensions: (1, 32, 128, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /conv2/Conv_output_0 for ONNX tensor: /conv2/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /conv2/Conv [Conv] outputs: [/conv2/Conv_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Relu_1 [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /conv2/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_1 [Relu] inputs: [/conv2/Conv_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Relu_1 for ONNX node: /Relu_1
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Relu_1_output_0 for ONNX tensor: /Relu_1_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_1 [Relu] outputs: [/Relu_1_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /pool/MaxPool [MaxPool]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Relu_1_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool/MaxPool [MaxPool] inputs: [/Relu_1_output_0 -> (1, 32, 128, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /pool/MaxPool for ONNX node: /pool/MaxPool
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /pool/MaxPool_output_0 for ONNX tensor: /pool/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool/MaxPool [MaxPool] outputs: [/pool/MaxPool_output_0 -> (1, 32, 64, 64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /conv3/Conv [Conv]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /pool/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_88
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_89
+[11/08/2024-09:04:20] [V] [TRT] /conv3/Conv [Conv] inputs: [/pool/MaxPool_output_0 -> (1, 32, 64, 64)[FLOAT]], [onnx::Conv_88 -> (64, 32, 3, 3)[FLOAT]], [onnx::Conv_89 -> (64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Convolution input dimensions: (1, 32, 64, 64)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /conv3/Conv for ONNX node: /conv3/Conv
+[11/08/2024-09:04:20] [V] [TRT] Using kernel: (3, 3), strides: (1, 1), prepadding: (1, 1), postpadding: (1, 1), dilations: (1, 1), numOutputs: 64
+[11/08/2024-09:04:20] [V] [TRT] Convolution output dimensions: (1, 64, 64, 64)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /conv3/Conv_output_0 for ONNX tensor: /conv3/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /conv3/Conv [Conv] outputs: [/conv3/Conv_output_0 -> (1, 64, 64, 64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Relu_2 [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /conv3/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_2 [Relu] inputs: [/conv3/Conv_output_0 -> (1, 64, 64, 64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Relu_2 for ONNX node: /Relu_2
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Relu_2_output_0 for ONNX tensor: /Relu_2_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_2 [Relu] outputs: [/Relu_2_output_0 -> (1, 64, 64, 64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /pool_1/MaxPool [MaxPool]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Relu_2_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_1/MaxPool [MaxPool] inputs: [/Relu_2_output_0 -> (1, 64, 64, 64)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /pool_1/MaxPool for ONNX node: /pool_1/MaxPool
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /pool_1/MaxPool_output_0 for ONNX tensor: /pool_1/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_1/MaxPool [MaxPool] outputs: [/pool_1/MaxPool_output_0 -> (1, 64, 32, 32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /conv4/Conv [Conv]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /pool_1/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_91
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_92
+[11/08/2024-09:04:20] [V] [TRT] /conv4/Conv [Conv] inputs: [/pool_1/MaxPool_output_0 -> (1, 64, 32, 32)[FLOAT]], [onnx::Conv_91 -> (96, 64, 3, 3)[FLOAT]], [onnx::Conv_92 -> (96)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Convolution input dimensions: (1, 64, 32, 32)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /conv4/Conv for ONNX node: /conv4/Conv
+[11/08/2024-09:04:20] [V] [TRT] Using kernel: (3, 3), strides: (1, 1), prepadding: (1, 1), postpadding: (1, 1), dilations: (1, 1), numOutputs: 96
+[11/08/2024-09:04:20] [V] [TRT] Convolution output dimensions: (1, 96, 32, 32)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /conv4/Conv_output_0 for ONNX tensor: /conv4/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /conv4/Conv [Conv] outputs: [/conv4/Conv_output_0 -> (1, 96, 32, 32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Relu_3 [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /conv4/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_3 [Relu] inputs: [/conv4/Conv_output_0 -> (1, 96, 32, 32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Relu_3 for ONNX node: /Relu_3
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Relu_3_output_0 for ONNX tensor: /Relu_3_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_3 [Relu] outputs: [/Relu_3_output_0 -> (1, 96, 32, 32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /pool_2/MaxPool [MaxPool]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Relu_3_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_2/MaxPool [MaxPool] inputs: [/Relu_3_output_0 -> (1, 96, 32, 32)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /pool_2/MaxPool for ONNX node: /pool_2/MaxPool
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /pool_2/MaxPool_output_0 for ONNX tensor: /pool_2/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_2/MaxPool [MaxPool] outputs: [/pool_2/MaxPool_output_0 -> (1, 96, 16, 16)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /conv5/Conv [Conv]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /pool_2/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_94
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: onnx::Conv_95
+[11/08/2024-09:04:20] [V] [TRT] /conv5/Conv [Conv] inputs: [/pool_2/MaxPool_output_0 -> (1, 96, 16, 16)[FLOAT]], [onnx::Conv_94 -> (96, 96, 3, 3)[FLOAT]], [onnx::Conv_95 -> (96)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Convolution input dimensions: (1, 96, 16, 16)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /conv5/Conv for ONNX node: /conv5/Conv
+[11/08/2024-09:04:20] [V] [TRT] Using kernel: (3, 3), strides: (1, 1), prepadding: (1, 1), postpadding: (1, 1), dilations: (1, 1), numOutputs: 96
+[11/08/2024-09:04:20] [V] [TRT] Convolution output dimensions: (1, 96, 16, 16)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /conv5/Conv_output_0 for ONNX tensor: /conv5/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /conv5/Conv [Conv] outputs: [/conv5/Conv_output_0 -> (1, 96, 16, 16)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Relu_4 [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /conv5/Conv_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_4 [Relu] inputs: [/conv5/Conv_output_0 -> (1, 96, 16, 16)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Relu_4 for ONNX node: /Relu_4
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Relu_4_output_0 for ONNX tensor: /Relu_4_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Relu_4 [Relu] outputs: [/Relu_4_output_0 -> (1, 96, 16, 16)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /pool_3/MaxPool [MaxPool]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Relu_4_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_3/MaxPool [MaxPool] inputs: [/Relu_4_output_0 -> (1, 96, 16, 16)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /pool_3/MaxPool for ONNX node: /pool_3/MaxPool
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /pool_3/MaxPool_output_0 for ONNX tensor: /pool_3/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] /pool_3/MaxPool [MaxPool] outputs: [/pool_3/MaxPool_output_0 -> (1, 96, 8, 8)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Constant [Constant]
+[11/08/2024-09:04:20] [V] [TRT] /Constant [Constant] inputs: 
+[11/08/2024-09:04:20] [V] [TRT] /Constant [Constant] outputs: [/Constant_output_0 -> (2)[INT32]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /Reshape [Reshape]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /pool_3/MaxPool_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Constant_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Reshape [Reshape] inputs: [/pool_3/MaxPool_output_0 -> (1, 96, 8, 8)[FLOAT]], [/Constant_output_0 -> (2)[INT32]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /Reshape for ONNX node: /Reshape
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /Reshape_output_0 for ONNX tensor: /Reshape_output_0
+[11/08/2024-09:04:20] [V] [TRT] /Reshape [Reshape] outputs: [/Reshape_output_0 -> (1, 6144)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.0/fc_1_phone/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Reshape_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.0.fc_1_phone.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.0.fc_1_phone.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/fc_1_phone/Gemm [Gemm] inputs: [/Reshape_output_0 -> (1, 6144)[FLOAT]], [heads.0.fc_1_phone.weight -> (128, 6144)[FLOAT]], [heads.0.fc_1_phone.bias -> (128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 6144), unsqueezing to: (1, 6144, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.0/fc_1_phone/Gemm for ONNX node: /heads.0/fc_1_phone/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128, 1, 1), squeezing to: (1, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.0/fc_1_phone/Gemm_output_0 for ONNX tensor: /heads.0/fc_1_phone/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/fc_1_phone/Gemm [Gemm] outputs: [/heads.0/fc_1_phone/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.0/relu_1_phone/Relu [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.0/fc_1_phone/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/relu_1_phone/Relu [Relu] inputs: [/heads.0/fc_1_phone/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.0/relu_1_phone/Relu for ONNX node: /heads.0/relu_1_phone/Relu
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.0/relu_1_phone/Relu_output_0 for ONNX tensor: /heads.0/relu_1_phone/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/relu_1_phone/Relu [Relu] outputs: [/heads.0/relu_1_phone/Relu_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.0/fc_2_phone/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.0/relu_1_phone/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.0.fc_2_phone.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.0.fc_2_phone.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/fc_2_phone/Gemm [Gemm] inputs: [/heads.0/relu_1_phone/Relu_output_0 -> (1, 128)[FLOAT]], [heads.0.fc_2_phone.weight -> (5, 128)[FLOAT]], [heads.0.fc_2_phone.bias -> (5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128), unsqueezing to: (1, 128, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.0/fc_2_phone/Gemm for ONNX node: /heads.0/fc_2_phone/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 5, 1, 1), squeezing to: (1, 5)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.0/fc_2_phone/Gemm_output_0 for ONNX tensor: /heads.0/fc_2_phone/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/fc_2_phone/Gemm [Gemm] outputs: [/heads.0/fc_2_phone/Gemm_output_0 -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.0/softmax_phone/Softmax [Softmax]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.0/fc_2_phone/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/softmax_phone/Softmax [Softmax] inputs: [/heads.0/fc_2_phone/Gemm_output_0 -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.0/softmax_phone/Softmax for ONNX node: /heads.0/softmax_phone/Softmax
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: probs_phone_0 for ONNX tensor: probs_phone
+[11/08/2024-09:04:20] [V] [TRT] /heads.0/softmax_phone/Softmax [Softmax] outputs: [probs_phone -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.1/fc_1_gaze/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Reshape_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.1.fc_1_gaze.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.1.fc_1_gaze.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/fc_1_gaze/Gemm [Gemm] inputs: [/Reshape_output_0 -> (1, 6144)[FLOAT]], [heads.1.fc_1_gaze.weight -> (128, 6144)[FLOAT]], [heads.1.fc_1_gaze.bias -> (128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 6144), unsqueezing to: (1, 6144, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.1/fc_1_gaze/Gemm for ONNX node: /heads.1/fc_1_gaze/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128, 1, 1), squeezing to: (1, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.1/fc_1_gaze/Gemm_output_0 for ONNX tensor: /heads.1/fc_1_gaze/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/fc_1_gaze/Gemm [Gemm] outputs: [/heads.1/fc_1_gaze/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.1/relu_1_gaze/Relu [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.1/fc_1_gaze/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/relu_1_gaze/Relu [Relu] inputs: [/heads.1/fc_1_gaze/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.1/relu_1_gaze/Relu for ONNX node: /heads.1/relu_1_gaze/Relu
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.1/relu_1_gaze/Relu_output_0 for ONNX tensor: /heads.1/relu_1_gaze/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/relu_1_gaze/Relu [Relu] outputs: [/heads.1/relu_1_gaze/Relu_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.1/fc_2_gaze/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.1/relu_1_gaze/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.1.fc_2_gaze.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.1.fc_2_gaze.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/fc_2_gaze/Gemm [Gemm] inputs: [/heads.1/relu_1_gaze/Relu_output_0 -> (1, 128)[FLOAT]], [heads.1.fc_2_gaze.weight -> (5, 128)[FLOAT]], [heads.1.fc_2_gaze.bias -> (5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128), unsqueezing to: (1, 128, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.1/fc_2_gaze/Gemm for ONNX node: /heads.1/fc_2_gaze/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 5, 1, 1), squeezing to: (1, 5)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.1/fc_2_gaze/Gemm_output_0 for ONNX tensor: /heads.1/fc_2_gaze/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/fc_2_gaze/Gemm [Gemm] outputs: [/heads.1/fc_2_gaze/Gemm_output_0 -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.1/softmax_gaze/Softmax [Softmax]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.1/fc_2_gaze/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/softmax_gaze/Softmax [Softmax] inputs: [/heads.1/fc_2_gaze/Gemm_output_0 -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.1/softmax_gaze/Softmax for ONNX node: /heads.1/softmax_gaze/Softmax
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: probs_gaze_1 for ONNX tensor: probs_gaze
+[11/08/2024-09:04:20] [V] [TRT] /heads.1/softmax_gaze/Softmax [Softmax] outputs: [probs_gaze -> (1, 5)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.2/fc_1_headset/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /Reshape_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.2.fc_1_headset.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.2.fc_1_headset.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/fc_1_headset/Gemm [Gemm] inputs: [/Reshape_output_0 -> (1, 6144)[FLOAT]], [heads.2.fc_1_headset.weight -> (128, 6144)[FLOAT]], [heads.2.fc_1_headset.bias -> (128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 6144), unsqueezing to: (1, 6144, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.2/fc_1_headset/Gemm for ONNX node: /heads.2/fc_1_headset/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128, 1, 1), squeezing to: (1, 128)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.2/fc_1_headset/Gemm_output_0 for ONNX tensor: /heads.2/fc_1_headset/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/fc_1_headset/Gemm [Gemm] outputs: [/heads.2/fc_1_headset/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.2/relu_1_headset/Relu [Relu]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.2/fc_1_headset/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/relu_1_headset/Relu [Relu] inputs: [/heads.2/fc_1_headset/Gemm_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.2/relu_1_headset/Relu for ONNX node: /heads.2/relu_1_headset/Relu
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.2/relu_1_headset/Relu_output_0 for ONNX tensor: /heads.2/relu_1_headset/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/relu_1_headset/Relu [Relu] outputs: [/heads.2/relu_1_headset/Relu_output_0 -> (1, 128)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.2/fc_2_headset/Gemm [Gemm]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.2/relu_1_headset/Relu_output_0
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.2.fc_2_headset.weight
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: heads.2.fc_2_headset.bias
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/fc_2_headset/Gemm [Gemm] inputs: [/heads.2/relu_1_headset/Relu_output_0 -> (1, 128)[FLOAT]], [heads.2.fc_2_headset.weight -> (3, 128)[FLOAT]], [heads.2.fc_2_headset.bias -> (3)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] GEMM: using FC layer instead of MM because all criteria were met.
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 128), unsqueezing to: (1, 128, 1, 1)
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.2/fc_2_headset/Gemm for ONNX node: /heads.2/fc_2_headset/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Original shape: (1, 3, 1, 1), squeezing to: (1, 3)
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: /heads.2/fc_2_headset/Gemm_output_0 for ONNX tensor: /heads.2/fc_2_headset/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/fc_2_headset/Gemm [Gemm] outputs: [/heads.2/fc_2_headset/Gemm_output_0 -> (1, 3)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Parsing node: /heads.2/softmax_headset/Softmax [Softmax]
+[11/08/2024-09:04:20] [V] [TRT] Searching for input: /heads.2/fc_2_headset/Gemm_output_0
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/softmax_headset/Softmax [Softmax] inputs: [/heads.2/fc_2_headset/Gemm_output_0 -> (1, 3)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Registering layer: /heads.2/softmax_headset/Softmax for ONNX node: /heads.2/softmax_headset/Softmax
+[11/08/2024-09:04:20] [V] [TRT] Registering tensor: probs_headset_2 for ONNX tensor: probs_headset
+[11/08/2024-09:04:20] [V] [TRT] /heads.2/softmax_headset/Softmax [Softmax] outputs: [probs_headset -> (1, 3)[FLOAT]], 
+[11/08/2024-09:04:20] [V] [TRT] Marking probs_phone_0 as output: probs_phone
+[11/08/2024-09:04:20] [V] [TRT] Marking probs_gaze_1 as output: probs_gaze
+[11/08/2024-09:04:20] [V] [TRT] Marking probs_headset_2 as output: probs_headset
+[11/08/2024-09:04:20] [I] Finish parsing network model
+[11/08/2024-09:04:20] [V] [TRT] Applying generic optimizations to the graph for inference.
+[11/08/2024-09:04:20] [V] [TRT] Original: 45 layers
+[11/08/2024-09:04:20] [V] [TRT] After dead-layer removal: 45 layers
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing (Unnamed Layer* 21) [Shuffle] with (Unnamed Layer* 22) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing (Unnamed Layer* 24) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing (Unnamed Layer* 31) [Shuffle] with (Unnamed Layer* 32) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing (Unnamed Layer* 34) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing (Unnamed Layer* 41) [Shuffle] with (Unnamed Layer* 42) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing (Unnamed Layer* 44) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] After Myelin optimization: 39 layers
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.0/fc_1_phone/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 15) [Shuffle]_output_and_/heads.0/fc_1_phone/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.0/fc_2_phone/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 19) [Shuffle]_output_and_/heads.0/fc_2_phone/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.1/fc_1_gaze/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 25) [Shuffle]_output_and_/heads.1/fc_1_gaze/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.1/fc_2_gaze/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 29) [Shuffle]_output_and_/heads.1/fc_2_gaze/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.2/fc_1_headset/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 35) [Shuffle]_output_and_/heads.2/fc_1_headset/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Running: FCToConvTransform
+[11/08/2024-09:04:20] [V] [TRT] Convert layer type of /heads.2/fc_2_headset/Gemm from FULLY_CONNECTED to CONVOLUTION
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing shuffle_between_(Unnamed Layer* 39) [Shuffle]_output_and_/heads.2/fc_2_headset/Gemm
+[11/08/2024-09:04:20] [V] [TRT] Applying ScaleNodes fusions.
+[11/08/2024-09:04:20] [V] [TRT] After scale fusion: 39 layers
+[11/08/2024-09:04:20] [V] [TRT] Running: SqueezePushDownFork
+[11/08/2024-09:04:20] [V] [TRT] -----------SqueezePushDown kSQUEEZE_FORK case: /heads.0/fc_1_phone/Gemm --> (Unnamed Layer* 17) [Shuffle] --> /heads.0/relu_1_phone/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: SqueezePushDownFork
+[11/08/2024-09:04:20] [V] [TRT] -----------SqueezePushDown kSQUEEZE_FORK case: /heads.1/fc_1_gaze/Gemm --> (Unnamed Layer* 27) [Shuffle] --> /heads.1/relu_1_gaze/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: SqueezePushDownFork
+[11/08/2024-09:04:20] [V] [TRT] -----------SqueezePushDown kSQUEEZE_FORK case: /heads.2/fc_1_headset/Gemm --> (Unnamed Layer* 37) [Shuffle] --> /heads.2/relu_1_headset/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing squeeze_after_/heads.0/relu_1_phone/Relu with (Unnamed Layer* 19) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing squeeze_after_/heads.1/relu_1_gaze/Relu with (Unnamed Layer* 29) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleShuffleFusion
+[11/08/2024-09:04:20] [V] [TRT] ShuffleShuffleFusion: Fusing squeeze_after_/heads.2/relu_1_headset/Relu with (Unnamed Layer* 39) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /conv1/Conv with /Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /conv2/Conv with /Relu_1
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /conv3/Conv with /Relu_2
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /conv4/Conv with /Relu_3
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /conv5/Conv with /Relu_4
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /heads.0/fc_1_phone/Gemm with /heads.0/relu_1_phone/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing squeeze_after_/heads.0/relu_1_phone/Relu + (Unnamed Layer* 19) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /heads.1/fc_1_gaze/Gemm with /heads.1/relu_1_gaze/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing squeeze_after_/heads.1/relu_1_gaze/Relu + (Unnamed Layer* 29) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] Running: ConvReluFusion
+[11/08/2024-09:04:20] [V] [TRT] ConvReluFusion: Fusing /heads.2/fc_1_headset/Gemm with /heads.2/relu_1_headset/Relu
+[11/08/2024-09:04:20] [V] [TRT] Running: ShuffleErasure
+[11/08/2024-09:04:20] [V] [TRT] Removing squeeze_after_/heads.2/relu_1_headset/Relu + (Unnamed Layer* 39) [Shuffle]
+[11/08/2024-09:04:20] [V] [TRT] After vertical fusions: 25 layers
+[11/08/2024-09:04:20] [V] [TRT] Replacing input 0 of /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu with (Unnamed Layer* 15) [Shuffle]_output
+[11/08/2024-09:04:20] [V] [TRT] Replacing input 0 of /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu with (Unnamed Layer* 15) [Shuffle]_output
+[11/08/2024-09:04:20] [V] [TRT] After dupe layer removal: 25 layers
+[11/08/2024-09:04:20] [V] [TRT] After final dead-layer removal: 23 layers
+[11/08/2024-09:04:20] [V] [TRT] Merging layers: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu
+[11/08/2024-09:04:20] [V] [TRT] After tensor merging: 21 layers
+[11/08/2024-09:04:20] [V] [TRT] After concat removal: 21 layers
+[11/08/2024-09:04:20] [V] [TRT] Graph construction and optimization completed in 0.021419 seconds.
+[11/08/2024-09:04:20] [I] [TRT] ---------- Layers Running on DLA ----------
+[11/08/2024-09:04:20] [I] [TRT] ---------- Layers Running on GPU ----------
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /conv1/Conv + /Relu
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /conv2/Conv + /Relu_1
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /pool/MaxPool
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /conv3/Conv + /Relu_2
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /pool_1/MaxPool
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /conv4/Conv + /Relu_3
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /pool_2/MaxPool
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /conv5/Conv + /Relu_4
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /pool_3/MaxPool
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /Reshape
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] (Unnamed Layer* 15) [Shuffle]
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.0/fc_2_phone/Gemm
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] (Unnamed Layer* 21) [Shuffle] + (Unnamed Layer* 22) [Shuffle]
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.0/softmax_phone/Softmax
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.1/fc_2_gaze/Gemm
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] (Unnamed Layer* 31) [Shuffle] + (Unnamed Layer* 32) [Shuffle]
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.1/softmax_gaze/Softmax
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.2/fc_2_headset/Gemm
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] (Unnamed Layer* 41) [Shuffle] + (Unnamed Layer* 42) [Shuffle]
+[11/08/2024-09:04:20] [I] [TRT] [GpuLayer] /heads.2/softmax_headset/Softmax
+[11/08/2024-09:04:20] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[11/08/2024-09:04:20] [V] [TRT] CuDNN tactics have been disabled during engine build
+[11/08/2024-09:04:20] [V] [TRT] Constructing optimization profile number 0 [1/1].
+[11/08/2024-09:04:20] [V] [TRT] Reserving memory for activation tensors. Host: 0 bytes Device: 196660 bytes
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(49152,16384,128,1) -> Float(49152,1,384,3) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(input -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.049968
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.032968
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.032968
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(524288,16384,128,1) -> Float(524288,1,4096,32) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/Relu_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.50516
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.488912
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.488912
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(524288,1,4096,32) -> Float(524288,16384,128,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/Relu_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.511484
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 1.16687
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 1002 Time: 0.511484
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(524288,1,4096,32) -> Float(524288,16384,128,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(131072,4096,64,1) -> Float(131072,1,2048,32) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> /pool/MaxPool_output_0) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.137248
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.124284
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.124284
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(131072,4096,64,1) -> Float(131072,1,2048,32) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.13822
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.12896
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.12896
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(131072,1,2048,32) -> Float(131072,4096,64,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.138292
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.158944
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 1002 Time: 0.138292
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(262144,1,4096,64) -> Float(262144,4096,64,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/Relu_2_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.184812
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.315864
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 1002 Time: 0.184812
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(65536,1024,32,1) -> Float(65536,1,2048,64) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> /pool_1/MaxPool_output_0) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.033508
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.054388
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 1002 Time: 0.033508
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(65536,1024,32,1) -> Float(65536,1,2048,64) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool_1/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.033156
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.048892
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 1002 Time: 0.033156
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(65536,1,2048,64) -> Float(65536,1024,32,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool_1/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.045168
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.041736
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.041736
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(98304,1,3072,96) -> Float(98304,1024,32,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/Relu_3_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.0874
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.073512
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.073512
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(24576,256,16,1) -> Float(24576,1,1536,96) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> /pool_2/MaxPool_output_0) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.021988
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.018572
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.018572
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(24576,256,16,1) -> Float(24576,1,1536,96) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool_2/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.021808
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.018764
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.018764
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(24576,1,1536,96) -> Float(24576,256,16,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/pool_2/MaxPool_output_0 -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.024784
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.016844
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.016844
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(24576,1,1536,96) -> Float(24576,256,16,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(6144,1,1,1) -> Float(6144,1,6144,6144) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> (Unnamed Layer* 15) [Shuffle]_output) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.012472
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.006848
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.006848
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(6144,1,1,1) -> Float(6144,1,6144,6144) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat((Unnamed Layer* 15) [Shuffle]_output -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.006964
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.006828
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.006828
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(6144,1,6144,6144) -> Float(6144,1,1,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat((Unnamed Layer* 15) [Shuffle]_output -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.007732
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.00668
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.00668
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(384,1,1,1) -> Float(384,1,384,384) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.004908
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.003172
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.003172
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(384,1,384,384) -> Float(384,1,1,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(<in> -> /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.004988
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.00334
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.00334
+[11/08/2024-09:04:20] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(384,1,1,1) -> Float(384,1,384,384) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/heads.0/relu_1_phone/Relu_out_tensor -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.02462
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 0 Time: 0.009168
+[11/08/2024-09:04:20] [V] [TRT] Fastest Tactic: 0 Time: 0.009168
+[11/08/2024-09:04:20] [V] [TRT] *************** Autotuning Reformat: Float(384,1,384,384) -> Float(384,1,1,1) ***************
+[11/08/2024-09:04:20] [V] [TRT] --------------- Timing Runner: Optimizer Reformat(/heads.0/relu_1_phone/Relu_out_tensor -> <out>) (Reformat)
+[11/08/2024-09:04:20] [V] [TRT] Tactic: 1002 Time: 0.023104
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 0 Time: 0.008848
+[11/08/2024-09:04:21] [V] [TRT] Fastest Tactic: 0 Time: 0.008848
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(5,1,5,5) -> Float(5,1,1,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: Optimizer Reformat((Unnamed Layer* 20) [Fully Connected]_output -> <out>) (Reformat)
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1002 Time: 0.02058
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 0 Time: 0.003196
+[11/08/2024-09:04:21] [V] [TRT] Fastest Tactic: 0 Time: 0.003196
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(384,1,1,1) -> Float(384,1,384,384) ***************
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(384,1,384,384) -> Float(384,1,1,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(5,1,5,5) -> Float(5,1,1,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(384,1,1,1) -> Float(384,1,384,384) ***************
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(384,1,384,384) -> Float(384,1,1,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning Reformat: Float(3,1,3,3) -> Float(3,1,1,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: Optimizer Reformat((Unnamed Layer* 40) [Fully Connected]_output -> <out>) (Reformat)
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1002 Time: 0.010336
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 0 Time: 0.003116
+[11/08/2024-09:04:21] [V] [TRT] Fastest Tactic: 0 Time: 0.003116
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing reformatting costs
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning format combination: Float(49152,16384,128,1) -> Float(524288,16384,128,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (CudaDepthwiseConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (FusedConvActConvolution)
+[11/08/2024-09:04:21] [V] [TRT] FusedConvActConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (CudnnConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (CaskConvolution)
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1062367460111450758 Time: 0.228132
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1754984623894446479 Time: 0.194808
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v0 Tactic: 3611739942397549984
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 3611739942397549984 Time: 0.608512
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1 Tactic: 3827454225649558724
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 3827454225649558724 Time: 0.4221
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v1 Tactic: 4337000649858996379
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 4337000649858996379 Time: 0.29918
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 4501471010995462441 Time: 0.570268
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 5137655947464784826 Time: 0.295688
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 5288347012147084929 Time: 0.601416
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148m_nt_v1 Tactic: 5921334924264294896
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 5921334924264294896 Time: 0.28634
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 6645123197870846056 Time: 0.31466
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 7144526460361122478 Time: 0.196808
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1 Tactic: 7852627285308570038
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 7852627285308570038 Time: 0.447756
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v1 Tactic: -9137461792520977713
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -9137461792520977713 Time: 0.575268
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v0 Tactic: -8776506421218919509
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -8776506421218919509 Time: 0.417396
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -8262349710178828730 Time: 0.615084
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v0 Tactic: -8133971918129952780
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -8133971918129952780 Time: 0.301644
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v1 Tactic: -6092040395344634144
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -6092040395344634144 Time: 0.214216
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -4787320710726427159 Time: 0.209532
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -3456450830548107839 Time: 0.196112
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v0 Tactic: -2318106587342035239
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -2318106587342035239 Time: 0.427176
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -1343271414618805657 Time: 0.278424
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -1218658103698133241 Time: 0.299192
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -836875257600482091 Time: 0.296424
+[11/08/2024-09:04:21] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:21] [V] [TRT] Tactic: -410470605513481746 Time: 0.57038
+[11/08/2024-09:04:21] [V] [TRT] Fastest Tactic: 1754984623894446479 Time: 0.194808
+[11/08/2024-09:04:21] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: 1754984623894446479
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning format combination: Float(49152,1,384,3) -> Float(524288,1,4096,32) ***************
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (CudnnConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv1/Conv + /Relu (CaskConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CaskConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:21] [V] [TRT] *************** Autotuning format combination: Float(524288,16384,128,1) -> Float(524288,16384,128,1) ***************
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (CudaDepthwiseConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (FusedConvActConvolution)
+[11/08/2024-09:04:21] [V] [TRT] FusedConvActConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (CudnnConvolution)
+[11/08/2024-09:04:21] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:21] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (CaskConvolution)
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1062367460111450758 Time: 0.900744
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 1754984623894446479 Time: 0.99634
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v0 Tactic: 3611739942397549984
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 3611739942397549984 Time: 2.69984
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1 Tactic: 3827454225649558724
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 3827454225649558724 Time: 0.802048
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v1 Tactic: 4337000649858996379
+[11/08/2024-09:04:21] [V] [TRT] Tactic: 4337000649858996379 Time: 2.54808
+[11/08/2024-09:04:21] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 4501471010995462441 Time: 5.02165
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 5137655947464784826 Time: 1.97733
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 5288347012147084929 Time: 3.40842
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148m_nt_v1 Tactic: 5921334924264294896
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 5921334924264294896 Time: 0.536212
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 6645123197870846056 Time: 1.46453
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 7144526460361122478 Time: 0.955316
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1 Tactic: 7852627285308570038
+[11/08/2024-09:04:22] [V] [TRT] Tactic: 7852627285308570038 Time: 0.824952
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v1 Tactic: -9137461792520977713
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -9137461792520977713 Time: 2.71148
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v0 Tactic: -8776506421218919509
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -8776506421218919509 Time: 0.826216
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -8262349710178828730 Time: 2.79457
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v0 Tactic: -8133971918129952780
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -8133971918129952780 Time: 1.56879
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v1 Tactic: -6092040395344634144
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -6092040395344634144 Time: 0.932996
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -4787320710726427159 Time: 0.993668
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -3456450830548107839 Time: 0.837588
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v0 Tactic: -2318106587342035239
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -2318106587342035239 Time: 1.10047
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -1343271414618805657 Time: 0.525312
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -1218658103698133241 Time: 1.56393
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -836875257600482091 Time: 1.51753
+[11/08/2024-09:04:22] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:22] [V] [TRT] Tactic: -410470605513481746 Time: 4.85567
+[11/08/2024-09:04:22] [V] [TRT] Fastest Tactic: -1343271414618805657 Time: 0.525312
+[11/08/2024-09:04:22] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -1343271414618805657
+[11/08/2024-09:04:22] [V] [TRT] *************** Autotuning format combination: Float(524288,1,4096,32) -> Float(524288,1,4096,32) ***************
+[11/08/2024-09:04:22] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (CudnnConvolution)
+[11/08/2024-09:04:22] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:23] [V] [TRT] --------------- Timing Runner: /conv2/Conv + /Relu_1 (CaskConvolution)
+[11/08/2024-09:04:23] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -9153228964338181824
+[11/08/2024-09:04:23] [V] [TRT] Tactic: -9153228964338181824 Time: 2.12038
+[11/08/2024-09:04:23] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -7394439838318485025
+[11/08/2024-09:04:23] [V] [TRT] Tactic: -7394439838318485025 Time: 1.89313
+[11/08/2024-09:04:23] [V] [TRT] Fastest Tactic: -7394439838318485025 Time: 1.89313
+[11/08/2024-09:04:23] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -7394439838318485025
+[11/08/2024-09:04:23] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:23] [V] [TRT] *************** Autotuning format combination: Float(524288,16384,128,1) -> Float(131072,4096,64,1) ***************
+[11/08/2024-09:04:23] [V] [TRT] --------------- Timing Runner: /pool/MaxPool (TiledPooling)
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5505281 Time: 0.178148
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5570817 Time: 0.114388
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5636353 Time: 0.094192
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5701889 Time: 0.080892
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5767425 Time: 0.087888
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5832961 Time: 0.081516
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5898497 Time: 0.090668
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 5964033 Time: 0.084692
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6029569 Time: 0.177832
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6095105 Time: 0.109604
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6160641 Time: 0.096952
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6226177 Time: 0.081808
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6291713 Time: 0.089944
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6357249 Time: 0.086884
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6422785 Time: 0.089312
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 6488321 Time: 0.08732
+[11/08/2024-09:04:23] [V] [TRT] Fastest Tactic: 5701889 Time: 0.080892
+[11/08/2024-09:04:23] [V] [TRT] --------------- Timing Runner: /pool/MaxPool (CudnnPooling)
+[11/08/2024-09:04:23] [V] [TRT] CudnnPooling has no valid tactics for this config, skipping
+[11/08/2024-09:04:23] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: TiledPooling Tactic: 5701889
+[11/08/2024-09:04:23] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:23] [V] [TRT] *************** Autotuning format combination: Float(131072,4096,64,1) -> Float(262144,4096,64,1) ***************
+[11/08/2024-09:04:23] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (CudaDepthwiseConvolution)
+[11/08/2024-09:04:23] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:23] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (FusedConvActConvolution)
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 524287 Time: 0.55792
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 720895 Time: 0.54036
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 983039 Time: 0.535276
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 1048575 Time: 0.570676
+[11/08/2024-09:04:23] [V] [TRT] Tactic: 1703935 Time: 0.550416
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 1769471 Time: 0.663096
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 1966079 Time: 0.51972
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2031615 Time: 0.560212
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2228223 Time: 0.55058
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2424831 Time: 0.595428
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2621439 Time: 0.6685
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2752511 Time: 0.565684
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2818047 Time: 1.36034
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 2883583 Time: 0.83504
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 3014655 Time: 0.560768
+[11/08/2024-09:04:24] [V] [TRT] Tactic: 3145727 Time: 0.534764
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 3473407 Time: 0.858276
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 3604479 Time: 0.510584
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 3735551 Time: 0.76576
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 4390911 Time: 0.576844
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 5046271 Time: 0.5824
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 5963775 Time: 0.533528
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 6160383 Time: 0.541904
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 6488063 Time: 0.610176
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 6881279 Time: 0.59754
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 7274495 Time: 0.719968
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 7864319 Time: 0.697192
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 7995391 Time: 0.489548
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 8585215 Time: 0.562768
+[11/08/2024-09:04:25] [V] [TRT] Tactic: 8847359 Time: 0.719972
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 8978431 Time: 0.573696
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 9043967 Time: 0.609112
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 9175039 Time: 0.496132
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 9502719 Time: 0.553188
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 9830399 Time: 0.798028
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 9961471 Time: 0.600276
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10027007 Time: 0.555388
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10092543 Time: 0.580468
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10289151 Time: 0.506624
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10485759 Time: 0.531756
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10682367 Time: 0.58604
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 10813439 Time: 0.447344
+[11/08/2024-09:04:26] [V] [TRT] Fastest Tactic: 10813439 Time: 0.447344
+[11/08/2024-09:04:26] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (CudnnConvolution)
+[11/08/2024-09:04:26] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:26] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (CaskConvolution)
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 1062367460111450758 Time: 0.47242
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 1754984623894446479 Time: 0.522592
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v0 Tactic: 3611739942397549984
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 3611739942397549984 Time: 0.698948
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1 Tactic: 3827454225649558724
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 3827454225649558724 Time: 0.408996
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v1 Tactic: 4337000649858996379
+[11/08/2024-09:04:26] [V] [TRT] Tactic: 4337000649858996379 Time: 0.382884
+[11/08/2024-09:04:26] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 4501471010995462441 Time: 0.685832
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5137655947464784826 Time: 0.367096
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5288347012147084929 Time: 0.668716
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148m_nt_v1 Tactic: 5921334924264294896
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5921334924264294896 Time: 0.265664
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6645123197870846056 Time: 0.373276
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 7144526460361122478 Time: 0.491616
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1 Tactic: 7852627285308570038
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 7852627285308570038 Time: 0.416688
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v1 Tactic: -9137461792520977713
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -9137461792520977713 Time: 0.685576
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v0 Tactic: -8776506421218919509
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -8776506421218919509 Time: 0.390592
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -8262349710178828730 Time: 0.682824
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v0 Tactic: -8133971918129952780
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -8133971918129952780 Time: 0.403868
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v1 Tactic: -6092040395344634144
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -6092040395344634144 Time: 0.487836
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -4787320710726427159 Time: 0.520464
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -3456450830548107839 Time: 0.430628
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v0 Tactic: -2318106587342035239
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -2318106587342035239 Time: 0.40816
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -1343271414618805657 Time: 0.25904
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -1218658103698133241 Time: 0.401488
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -836875257600482091 Time: 0.392468
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -410470605513481746 Time: 0.662876
+[11/08/2024-09:04:27] [V] [TRT] Fastest Tactic: -1343271414618805657 Time: 0.25904
+[11/08/2024-09:04:27] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -1343271414618805657
+[11/08/2024-09:04:27] [V] [TRT] *************** Autotuning format combination: Float(131072,1,2048,32) -> Float(262144,1,4096,64) ***************
+[11/08/2024-09:04:27] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (CudnnConvolution)
+[11/08/2024-09:04:27] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:27] [V] [TRT] --------------- Timing Runner: /conv3/Conv + /Relu_2 (CaskConvolution)
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -9153228964338181824
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -9153228964338181824 Time: 0.570288
+[11/08/2024-09:04:27] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -7394439838318485025
+[11/08/2024-09:04:27] [V] [TRT] Tactic: -7394439838318485025 Time: 0.3551
+[11/08/2024-09:04:27] [V] [TRT] Fastest Tactic: -7394439838318485025 Time: 0.3551
+[11/08/2024-09:04:27] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -7394439838318485025
+[11/08/2024-09:04:27] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:27] [V] [TRT] *************** Autotuning format combination: Float(262144,4096,64,1) -> Float(65536,1024,32,1) ***************
+[11/08/2024-09:04:27] [V] [TRT] --------------- Timing Runner: /pool_1/MaxPool (TiledPooling)
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5505281 Time: 0.09084
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5570817 Time: 0.065272
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5636353 Time: 0.053364
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5701889 Time: 0.050712
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5767425 Time: 0.054848
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5832961 Time: 0.049788
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5898497 Time: 0.053528
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 5964033 Time: 0.060532
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6029569 Time: 0.090668
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6095105 Time: 0.059648
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6160641 Time: 0.062804
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6226177 Time: 0.062568
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6291713 Time: 0.060668
+[11/08/2024-09:04:27] [V] [TRT] Tactic: 6357249 Time: 0.066716
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 6422785 Time: 0.054672
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 6488321 Time: 0.04918
+[11/08/2024-09:04:28] [V] [TRT] Fastest Tactic: 6488321 Time: 0.04918
+[11/08/2024-09:04:28] [V] [TRT] --------------- Timing Runner: /pool_1/MaxPool (CudnnPooling)
+[11/08/2024-09:04:28] [V] [TRT] CudnnPooling has no valid tactics for this config, skipping
+[11/08/2024-09:04:28] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: TiledPooling Tactic: 6488321
+[11/08/2024-09:04:28] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:28] [V] [TRT] *************** Autotuning format combination: Float(65536,1024,32,1) -> Float(98304,1024,32,1) ***************
+[11/08/2024-09:04:28] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (CudaDepthwiseConvolution)
+[11/08/2024-09:04:28] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:28] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (FusedConvActConvolution)
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 524287 Time: 0.365616
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 720895 Time: 0.453796
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 983039 Time: 0.401496
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 1048575 Time: 0.344124
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 1703935 Time: 0.327756
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 1769471 Time: 0.502424
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 1966079 Time: 0.380304
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2031615 Time: 0.466672
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2228223 Time: 0.36494
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2424831 Time: 0.3958
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2621439 Time: 0.396164
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2752511 Time: 0.469944
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2818047 Time: 0.733248
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 2883583 Time: 0.457872
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 3014655 Time: 0.327096
+[11/08/2024-09:04:28] [V] [TRT] Tactic: 3145727 Time: 0.46168
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 3473407 Time: 0.448312
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 3604479 Time: 0.306788
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 3735551 Time: 0.436948
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 4390911 Time: 0.49612
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 5046271 Time: 0.33876
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 5963775 Time: 0.422552
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 6160383 Time: 0.352216
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 6488063 Time: 0.373944
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 6881279 Time: 0.458372
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 7274495 Time: 0.51502
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 7864319 Time: 0.430756
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 7995391 Time: 0.382132
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 8585215 Time: 0.392136
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 8847359 Time: 0.415168
+[11/08/2024-09:04:29] [V] [TRT] Tactic: 8978431 Time: 0.433264
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 9043967 Time: 0.535004
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 9175039 Time: 0.30922
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 9502719 Time: 0.492396
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 9830399 Time: 0.40368
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 9961471 Time: 0.361284
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10027007 Time: 0.347944
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10092543 Time: 0.503392
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10289151 Time: 0.3823
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10485759 Time: 0.34316
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10682367 Time: 0.36638
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 10813439 Time: 0.374416
+[11/08/2024-09:04:30] [V] [TRT] Fastest Tactic: 3604479 Time: 0.306788
+[11/08/2024-09:04:30] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (CudnnConvolution)
+[11/08/2024-09:04:30] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:30] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (CaskConvolution)
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 1062367460111450758 Time: 0.32818
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 1754984623894446479 Time: 0.434316
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v0 Tactic: 3611739942397549984
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 3611739942397549984 Time: 0.347932
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1 Tactic: 3827454225649558724
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 3827454225649558724 Time: 0.252024
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v1 Tactic: 4337000649858996379
+[11/08/2024-09:04:30] [V] [TRT] Tactic: 4337000649858996379 Time: 0.360592
+[11/08/2024-09:04:30] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 4501471010995462441 Time: 0.342608
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5137655947464784826 Time: 0.34226
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5288347012147084929 Time: 0.31904
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148m_nt_v1 Tactic: 5921334924264294896
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5921334924264294896 Time: 0.172928
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 6645123197870846056 Time: 0.347428
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 7144526460361122478 Time: 0.378828
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1 Tactic: 7852627285308570038
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 7852627285308570038 Time: 0.22836
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v1 Tactic: -9137461792520977713
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -9137461792520977713 Time: 0.33038
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v0 Tactic: -8776506421218919509
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -8776506421218919509 Time: 0.244496
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -8262349710178828730 Time: 0.328456
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v0 Tactic: -8133971918129952780
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -8133971918129952780 Time: 0.375816
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v1 Tactic: -6092040395344634144
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -6092040395344634144 Time: 0.340032
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -4787320710726427159 Time: 0.403428
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -3456450830548107839 Time: 0.296636
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v0 Tactic: -2318106587342035239
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -2318106587342035239 Time: 0.227
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -1343271414618805657 Time: 0.166868
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -1218658103698133241 Time: 0.370552
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -836875257600482091 Time: 0.354408
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -410470605513481746 Time: 0.318348
+[11/08/2024-09:04:31] [V] [TRT] Fastest Tactic: -1343271414618805657 Time: 0.166868
+[11/08/2024-09:04:31] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -1343271414618805657
+[11/08/2024-09:04:31] [V] [TRT] *************** Autotuning format combination: Float(65536,1,2048,64) -> Float(98304,1,3072,96) ***************
+[11/08/2024-09:04:31] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (CudnnConvolution)
+[11/08/2024-09:04:31] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:31] [V] [TRT] --------------- Timing Runner: /conv4/Conv + /Relu_3 (CaskConvolution)
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -9153228964338181824
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -9153228964338181824 Time: 0.347248
+[11/08/2024-09:04:31] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -7394439838318485025
+[11/08/2024-09:04:31] [V] [TRT] Tactic: -7394439838318485025 Time: 0.32452
+[11/08/2024-09:04:31] [V] [TRT] Fastest Tactic: -7394439838318485025 Time: 0.32452
+[11/08/2024-09:04:31] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -7394439838318485025
+[11/08/2024-09:04:31] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:31] [V] [TRT] *************** Autotuning format combination: Float(98304,1024,32,1) -> Float(24576,256,16,1) ***************
+[11/08/2024-09:04:31] [V] [TRT] --------------- Timing Runner: /pool_2/MaxPool (TiledPooling)
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5505281 Time: 0.063012
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5570817 Time: 0.03884
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5636353 Time: 0.03078
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5701889 Time: 0.026668
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5767425 Time: 0.026016
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5832961 Time: 0.022588
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5898497 Time: 0.022084
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 5964033 Time: 0.025436
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 6029569 Time: 0.033168
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 6095105 Time: 0.024424
+[11/08/2024-09:04:31] [V] [TRT] Tactic: 6160641 Time: 0.022852
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 6226177 Time: 0.01614
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 6291713 Time: 0.015036
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 6357249 Time: 0.013452
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 6422785 Time: 0.013668
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 6488321 Time: 0.013548
+[11/08/2024-09:04:32] [V] [TRT] Fastest Tactic: 6357249 Time: 0.013452
+[11/08/2024-09:04:32] [V] [TRT] --------------- Timing Runner: /pool_2/MaxPool (CudnnPooling)
+[11/08/2024-09:04:32] [V] [TRT] CudnnPooling has no valid tactics for this config, skipping
+[11/08/2024-09:04:32] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: TiledPooling Tactic: 6357249
+[11/08/2024-09:04:32] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:32] [V] [TRT] *************** Autotuning format combination: Float(24576,256,16,1) -> Float(24576,256,16,1) ***************
+[11/08/2024-09:04:32] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (CudaDepthwiseConvolution)
+[11/08/2024-09:04:32] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:32] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (FusedConvActConvolution)
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 524287 Time: 0.166552
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 720895 Time: 0.197012
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 983039 Time: 0.173488
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 1048575 Time: 0.143556
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 1703935 Time: 0.144348
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 1769471 Time: 0.230028
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 1966079 Time: 0.164736
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2031615 Time: 0.218388
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2228223 Time: 0.183872
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2424831 Time: 0.138076
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2621439 Time: 0.150064
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2752511 Time: 0.225308
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2818047 Time: 0.331008
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 2883583 Time: 0.20178
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 3014655 Time: 0.14284
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 3145727 Time: 0.22142
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 3473407 Time: 0.218372
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 3604479 Time: 0.153056
+[11/08/2024-09:04:32] [V] [TRT] Tactic: 3735551 Time: 0.18974
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 4390911 Time: 0.244628
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 5046271 Time: 0.161328
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 5963775 Time: 0.195588
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 6160383 Time: 0.174924
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 6488063 Time: 0.200936
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 6881279 Time: 0.224344
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 7274495 Time: 0.216844
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 7864319 Time: 0.177148
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 7995391 Time: 0.149204
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 8585215 Time: 0.19826
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 8847359 Time: 0.201764
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 8978431 Time: 0.194764
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 9043967 Time: 0.186788
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 9175039 Time: 0.138516
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 9502719 Time: 0.248244
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 9830399 Time: 0.180048
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 9961471 Time: 0.15204
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10027007 Time: 0.1733
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10092543 Time: 0.244504
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10289151 Time: 0.16524
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10485759 Time: 0.170296
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10682367 Time: 0.143476
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 10813439 Time: 0.139884
+[11/08/2024-09:04:33] [V] [TRT] Fastest Tactic: 2424831 Time: 0.138076
+[11/08/2024-09:04:33] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (CudnnConvolution)
+[11/08/2024-09:04:33] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:33] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (CaskConvolution)
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 1062367460111450758 Time: 0.219276
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 1754984623894446479 Time: 0.209408
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v0 Tactic: 3611739942397549984
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 3611739942397549984 Time: 0.186396
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v1 Tactic: 3827454225649558724
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 3827454225649558724 Time: 0.101308
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v1 Tactic: 4337000649858996379
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 4337000649858996379 Time: 0.183364
+[11/08/2024-09:04:33] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:33] [V] [TRT] Tactic: 4501471010995462441 Time: 0.148312
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5137655947464784826 Time: 0.141024
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5288347012147084929 Time: 0.139048
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148m_nt_v1 Tactic: 5921334924264294896
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5921334924264294896 Time: 0.071196
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 6645123197870846056 Time: 0.157748
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 7144526460361122478 Time: 0.154352
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1 Tactic: 7852627285308570038
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 7852627285308570038 Time: 0.082532
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_large_nn_v1 Tactic: -9137461792520977713
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -9137461792520977713 Time: 0.15242
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148n_nt_v0 Tactic: -8776506421218919509
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -8776506421218919509 Time: 0.095788
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -8262349710178828730 Time: 0.162916
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_large_nn_v0 Tactic: -8133971918129952780
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -8133971918129952780 Time: 0.215608
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v1 Tactic: -6092040395344634144
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -6092040395344634144 Time: 0.205992
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -4787320710726427159 Time: 0.172888
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -3456450830548107839 Time: 0.159692
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v0 Tactic: -2318106587342035239
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -2318106587342035239 Time: 0.087152
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -1343271414618805657 Time: 0.063928
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -1218658103698133241 Time: 0.202256
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -836875257600482091 Time: 0.189644
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -410470605513481746 Time: 0.138504
+[11/08/2024-09:04:34] [V] [TRT] Fastest Tactic: -1343271414618805657 Time: 0.063928
+[11/08/2024-09:04:34] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -1343271414618805657
+[11/08/2024-09:04:34] [V] [TRT] *************** Autotuning format combination: Float(24576,1,1536,96) -> Float(24576,1,1536,96) ***************
+[11/08/2024-09:04:34] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (CudnnConvolution)
+[11/08/2024-09:04:34] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:34] [V] [TRT] --------------- Timing Runner: /conv5/Conv + /Relu_4 (CaskConvolution)
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -9153228964338181824
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -9153228964338181824 Time: 0.135144
+[11/08/2024-09:04:34] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -7394439838318485025
+[11/08/2024-09:04:34] [V] [TRT] Tactic: -7394439838318485025 Time: 0.121384
+[11/08/2024-09:04:34] [V] [TRT] Fastest Tactic: -7394439838318485025 Time: 0.121384
+[11/08/2024-09:04:34] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -7394439838318485025
+[11/08/2024-09:04:34] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:34] [V] [TRT] *************** Autotuning format combination: Float(24576,256,16,1) -> Float(6144,64,8,1) ***************
+[11/08/2024-09:04:34] [V] [TRT] --------------- Timing Runner: /pool_3/MaxPool (TiledPooling)
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5505281 Time: 0.032416
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5570817 Time: 0.02048
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5636353 Time: 0.017304
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5701889 Time: 0.014864
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5767425 Time: 0.01434
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5832961 Time: 0.012744
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5898497 Time: 0.01286
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 5964033 Time: 0.01614
+[11/08/2024-09:04:34] [V] [TRT] Tactic: 6029569 Time: 0.020856
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6095105 Time: 0.012644
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6160641 Time: 0.01046
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6226177 Time: 0.008796
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6291713 Time: 0.00906
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6357249 Time: 0.009092
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6422785 Time: 0.008744
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 6488321 Time: 0.008808
+[11/08/2024-09:04:35] [V] [TRT] Fastest Tactic: 6422785 Time: 0.008744
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /pool_3/MaxPool (CudnnPooling)
+[11/08/2024-09:04:35] [V] [TRT] CudnnPooling has no valid tactics for this config, skipping
+[11/08/2024-09:04:35] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: TiledPooling Tactic: 6422785
+[11/08/2024-09:04:35] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:35] [V] [TRT] *************** Autotuning format combination: Float(6144,64,8,1) -> Float(6144,1) ***************
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /Reshape (Shuffle)
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 0 Time: 0.003048
+[11/08/2024-09:04:35] [V] [TRT] Fastest Tactic: 0 Time: 0.003048
+[11/08/2024-09:04:35] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: Shuffle Tactic: 0
+[11/08/2024-09:04:35] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:35] [V] [TRT] *************** Autotuning format combination: Float(6144,1) -> Float(6144,1,1,1) ***************
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: (Unnamed Layer* 15) [Shuffle] (Shuffle)
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 0 Time: 0.003064
+[11/08/2024-09:04:35] [V] [TRT] Fastest Tactic: 0 Time: 0.003064
+[11/08/2024-09:04:35] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: Shuffle Tactic: 0
+[11/08/2024-09:04:35] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:35] [V] [TRT] *************** Autotuning format combination: Float(6144,1,1,1) -> Float(384,1,1,1) ***************
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CudaDepthwiseConvolution)
+[11/08/2024-09:04:35] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (FusedConvActConvolution)
+[11/08/2024-09:04:35] [V] [TRT] FusedConvActConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CudnnConvolution)
+[11/08/2024-09:04:35] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CublasConvolution)
+[11/08/2024-09:04:35] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:35] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CaskConvolution)
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 1062367460111450758 Time: 1.54799
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v0 Tactic: 1698681053543049347
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 1698681053543049347 Time: 1.60951
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 4501471010995462441 Time: 2.23534
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 5137655947464784826 Time: 1.32141
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 5288347012147084929 Time: 1.61838
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v1 Tactic: 5326823351883942011
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 5326823351883942011 Time: 1.61478
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v0 Tactic: 5500448035057547314
+[11/08/2024-09:04:35] [V] [TRT] Tactic: 5500448035057547314 Time: 2.91692
+[11/08/2024-09:04:35] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:36] [V] [TRT] Tactic: 6645123197870846056 Time: 1.82845
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:36] [V] [TRT] Tactic: 7144526460361122478 Time: 2.34406
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -8262349710178828730 Time: 2.09298
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v1 Tactic: -6576203419454146580
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -6576203419454146580 Time: 1.34233
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -4787320710726427159 Time: 2.4
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -3456450830548107839 Time: 1.44096
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -1218658103698133241 Time: 1.81466
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -836875257600482091 Time: 1.70262
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -410470605513481746 Time: 1.64783
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v0 Tactic: -377491875521947884
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -377491875521947884 Time: 1.58793
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v1 Tactic: -37215280111360163
+[11/08/2024-09:04:36] [V] [TRT] Tactic: -37215280111360163 Time: 1.43552
+[11/08/2024-09:04:36] [V] [TRT] Fastest Tactic: 5137655947464784826 Time: 1.32141
+[11/08/2024-09:04:36] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: 5137655947464784826
+[11/08/2024-09:04:36] [V] [TRT] *************** Autotuning format combination: Float(6144,1,6144,6144) -> Float(384,1,384,384) ***************
+[11/08/2024-09:04:36] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CudnnConvolution)
+[11/08/2024-09:04:36] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:36] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CublasConvolution)
+[11/08/2024-09:04:36] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:36] [V] [TRT] --------------- Timing Runner: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu (CaskConvolution)
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_interior_nhwc_tn_v1 Tactic: 3886731678879822788
+[11/08/2024-09:04:36] [V] [TRT] Tactic: 3886731678879822788 Time: 1.87912
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_interior_nhwc_tn_v1 Tactic: 6629944304117643200
+[11/08/2024-09:04:36] [V] [TRT] Tactic: 6629944304117643200 Time: 2.43724
+[11/08/2024-09:04:36] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x32_sliced1x4_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -9153228964338181824
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -9153228964338181824 Time: 1.55318
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_sliced1x2_ldg4_relu_exp_small_nhwc_tn_v1 Tactic: -7394439838318485025
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -7394439838318485025 Time: 1.33991
+[11/08/2024-09:04:37] [V] [TRT] Fastest Tactic: -7394439838318485025 Time: 1.33991
+[11/08/2024-09:04:37] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: -7394439838318485025
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(384,1,1,1) -> Float(5,1,1,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CudaDepthwiseConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (FusedConvActConvolution)
+[11/08/2024-09:04:37] [V] [TRT] FusedConvActConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CudnnConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CublasConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CaskConvolution)
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1062367460111450758 Time: 0.026912
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v0 Tactic: 1698681053543049347
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1698681053543049347 Time: 0.01842
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 4501471010995462441 Time: 0.04868
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5137655947464784826 Time: 0.022524
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5288347012147084929 Time: 0.028904
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v1 Tactic: 5326823351883942011
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5326823351883942011 Time: 0.027924
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v0 Tactic: 5500448035057547314
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5500448035057547314 Time: 0.023816
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 6645123197870846056 Time: 0.023836
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 7144526460361122478 Time: 0.019036
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -8262349710178828730 Time: 0.029136
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v1 Tactic: -6576203419454146580
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -6576203419454146580 Time: 0.023164
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -4787320710726427159 Time: 0.019892
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -3456450830548107839 Time: 0.024036
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -1218658103698133241 Time: 0.026368
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -836875257600482091 Time: 0.02426
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -410470605513481746 Time: 0.028328
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v0 Tactic: -377491875521947884
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -377491875521947884 Time: 0.02832
+[11/08/2024-09:04:37] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v1 Tactic: -37215280111360163
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -37215280111360163 Time: 0.021872
+[11/08/2024-09:04:37] [V] [TRT] Fastest Tactic: 1698681053543049347 Time: 0.01842
+[11/08/2024-09:04:37] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: 1698681053543049347
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(384,1,384,384) -> Float(5,1,5,5) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CudnnConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CublasConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/fc_2_phone/Gemm (CaskConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CaskConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(5,1,1,1) -> Float(5,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: (Unnamed Layer* 21) [Shuffle] + (Unnamed Layer* 22) [Shuffle] (Shuffle)
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 0 Time: 0.00298
+[11/08/2024-09:04:37] [V] [TRT] Fastest Tactic: 0 Time: 0.00298
+[11/08/2024-09:04:37] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: Shuffle Tactic: 0
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(5,1) -> Float(5,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.0/softmax_phone/Softmax (CudaSoftMax)
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1002 Time: 0.006792
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1001 Time: 0.003252
+[11/08/2024-09:04:37] [V] [TRT] Fastest Tactic: 1001 Time: 0.003252
+[11/08/2024-09:04:37] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CudaSoftMax Tactic: 1001
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(384,1,1,1) -> Float(5,1,1,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(384,1,384,384) -> Float(5,1,5,5) ***************
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(5,1,1,1) -> Float(5,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: (Unnamed Layer* 31) [Shuffle] + (Unnamed Layer* 32) [Shuffle] (Shuffle)
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 0 Time: 0.003096
+[11/08/2024-09:04:37] [V] [TRT] Fastest Tactic: 0 Time: 0.003096
+[11/08/2024-09:04:37] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: Shuffle Tactic: 0
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(5,1) -> Float(5,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:37] [V] [TRT] *************** Autotuning format combination: Float(384,1,1,1) -> Float(3,1,1,1) ***************
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CudaDepthwiseConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CudaDepthwiseConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (FusedConvActConvolution)
+[11/08/2024-09:04:37] [V] [TRT] FusedConvActConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CudnnConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CublasConvolution)
+[11/08/2024-09:04:37] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:37] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CaskConvolution)
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v1 Tactic: 1062367460111450758
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1062367460111450758 Time: 0.051904
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v0 Tactic: 1698681053543049347
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 1698681053543049347 Time: 0.019952
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v1 Tactic: 4501471010995462441
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 4501471010995462441 Time: 0.028804
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5137655947464784826 Time: 0.02214
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v0 Tactic: 5288347012147084929
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5288347012147084929 Time: 0.02842
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v1 Tactic: 5326823351883942011
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5326823351883942011 Time: 0.028328
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v0 Tactic: 5500448035057547314
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 5500448035057547314 Time: 0.023456
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v1 Tactic: 6645123197870846056
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 6645123197870846056 Time: 0.023656
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:37] [V] [TRT] Tactic: 7144526460361122478 Time: 0.018508
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_medium_nn_v0 Tactic: -8262349710178828730
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -8262349710178828730 Time: 0.029152
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v1 Tactic: -6576203419454146580
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -6576203419454146580 Time: 0.023564
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_medium_nn_v0 Tactic: -4787320710726427159
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -4787320710726427159 Time: 0.029784
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v1 Tactic: -3456450830548107839
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -3456450830548107839 Time: 0.051072
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_medium_nn_v0 Tactic: -1218658103698133241
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -1218658103698133241 Time: 0.046608
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v0 Tactic: -836875257600482091
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -836875257600482091 Time: 0.024264
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_small_nn_v1 Tactic: -410470605513481746
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -410470605513481746 Time: 0.03108
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x128_relu_interior_nn_v0 Tactic: -377491875521947884
+[11/08/2024-09:04:37] [V] [TRT] Tactic: -377491875521947884 Time: 0.027836
+[11/08/2024-09:04:37] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x64_relu_interior_nn_v1 Tactic: -37215280111360163
+[11/08/2024-09:04:38] [V] [TRT] Tactic: -37215280111360163 Time: 0.021536
+[11/08/2024-09:04:38] [V] [TRT] Fastest Tactic: 7144526460361122478 Time: 0.018508
+[11/08/2024-09:04:38] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CaskConvolution Tactic: 7144526460361122478
+[11/08/2024-09:04:38] [V] [TRT] *************** Autotuning format combination: Float(384,1,384,384) -> Float(3,1,3,3) ***************
+[11/08/2024-09:04:38] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CudnnConvolution)
+[11/08/2024-09:04:38] [V] [TRT] CudnnConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:38] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CublasConvolution)
+[11/08/2024-09:04:38] [V] [TRT] CublasConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:38] [V] [TRT] --------------- Timing Runner: /heads.2/fc_2_headset/Gemm (CaskConvolution)
+[11/08/2024-09:04:38] [V] [TRT] CaskConvolution has no valid tactics for this config, skipping
+[11/08/2024-09:04:38] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:38] [V] [TRT] *************** Autotuning format combination: Float(3,1,1,1) -> Float(3,1) ***************
+[11/08/2024-09:04:38] [V] [TRT] --------------- Timing Runner: (Unnamed Layer* 41) [Shuffle] + (Unnamed Layer* 42) [Shuffle] (Shuffle)
+[11/08/2024-09:04:38] [V] [TRT] Tactic: 0 Time: 0.00312
+[11/08/2024-09:04:38] [V] [TRT] Fastest Tactic: 0 Time: 0.00312
+[11/08/2024-09:04:38] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: Shuffle Tactic: 0
+[11/08/2024-09:04:38] [V] [TRT] =============== Computing costs for 
+[11/08/2024-09:04:38] [V] [TRT] *************** Autotuning format combination: Float(3,1) -> Float(3,1) ***************
+[11/08/2024-09:04:38] [V] [TRT] --------------- Timing Runner: /heads.2/softmax_headset/Softmax (CudaSoftMax)
+[11/08/2024-09:04:38] [V] [TRT] Tactic: 1002 Time: 0.006764
+[11/08/2024-09:04:38] [V] [TRT] Tactic: 1001 Time: 0.0032
+[11/08/2024-09:04:38] [V] [TRT] Fastest Tactic: 1001 Time: 0.0032
+[11/08/2024-09:04:38] [V] [TRT] >>>>>>>>>>>>>>> Chose Runner Type: CudaSoftMax Tactic: 1001
+[11/08/2024-09:04:38] [V] [TRT] Formats and tactics selection completed in 17.8226 seconds.
+[11/08/2024-09:04:38] [V] [TRT] After reformat layers: 21 layers
+[11/08/2024-09:04:38] [V] [TRT] Pre-optimized block assignment.
+[11/08/2024-09:04:38] [V] [TRT] Block size 2097152
+[11/08/2024-09:04:38] [V] [TRT] Block size 2097152
+[11/08/2024-09:04:38] [V] [TRT] Block size 524288
+[11/08/2024-09:04:38] [V] [TRT] Block size 1048576
+[11/08/2024-09:04:38] [V] [TRT] Block size 262144
+[11/08/2024-09:04:38] [V] [TRT] Block size 393216
+[11/08/2024-09:04:38] [V] [TRT] Block size 98304
+[11/08/2024-09:04:38] [V] [TRT] Block size 98304
+[11/08/2024-09:04:38] [V] [TRT] Block size 24576
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [V] [TRT] Block size 512
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [V] [TRT] Block size 512
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [V] [TRT] Block size 512
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [V] [TRT] Block size 1536
+[11/08/2024-09:04:38] [V] [TRT] Block size 2147483648
+[11/08/2024-09:04:38] [V] [TRT] Total Activation Memory: 2154130437
+[11/08/2024-09:04:38] [I] [TRT] Detected 1 inputs and 3 output network tensors.
+[11/08/2024-09:04:38] [V] [TRT] /conv1/Conv + /Relu Set Tactic Name: maxwell_scudnn_128x32_relu_large_nn_v0 Tactic: 1754984623894446479
+[11/08/2024-09:04:38] [V] [TRT] /conv2/Conv + /Relu_1 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:38] [V] [TRT] /conv3/Conv + /Relu_2 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:38] [V] [TRT] /conv4/Conv + /Relu_3 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:38] [V] [TRT] /conv5/Conv + /Relu_4 Set Tactic Name: maxwell_scudnn_winograd_128x128_ldg1_ldg4_mobile_relu_tile148t_nt_v0 Tactic: -1343271414618805657
+[11/08/2024-09:04:38] [V] [TRT] /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Set Tactic Name: maxwell_scudnn_128x64_relu_small_nn_v1 Tactic: 5137655947464784826
+[11/08/2024-09:04:38] [V] [TRT] /heads.0/fc_2_phone/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v0 Tactic: 1698681053543049347
+[11/08/2024-09:04:38] [V] [TRT] /heads.1/fc_2_gaze/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_interior_nn_v0 Tactic: 1698681053543049347
+[11/08/2024-09:04:38] [V] [TRT] /heads.2/fc_2_headset/Gemm Set Tactic Name: maxwell_scudnn_128x32_relu_small_nn_v0 Tactic: 7144526460361122478
+[11/08/2024-09:04:38] [V] [TRT] Layer: /conv1/Conv + /Relu Host Persistent: 4224 Device Persistent: 102400 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /conv2/Conv + /Relu_1 Host Persistent: 512 Device Persistent: 102912 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /pool/MaxPool Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /conv3/Conv + /Relu_2 Host Persistent: 512 Device Persistent: 205312 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /pool_1/MaxPool Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /conv4/Conv + /Relu_3 Host Persistent: 512 Device Persistent: 614912 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /pool_2/MaxPool Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /conv5/Conv + /Relu_4 Host Persistent: 512 Device Persistent: 922112 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /pool_3/MaxPool Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /Reshape Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: (Unnamed Layer* 15) [Shuffle] Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu Host Persistent: 1664 Device Persistent: 9439232 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.0/fc_2_phone/Gemm Host Persistent: 3200 Device Persistent: 3072 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: (Unnamed Layer* 21) [Shuffle] + (Unnamed Layer* 22) [Shuffle] Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.0/softmax_phone/Softmax Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.1/fc_2_gaze/Gemm Host Persistent: 3200 Device Persistent: 3072 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: (Unnamed Layer* 31) [Shuffle] + (Unnamed Layer* 32) [Shuffle] Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.1/softmax_gaze/Softmax Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.2/fc_2_headset/Gemm Host Persistent: 1664 Device Persistent: 2048 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: (Unnamed Layer* 41) [Shuffle] + (Unnamed Layer* 42) [Shuffle] Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [V] [TRT] Layer: /heads.2/softmax_headset/Softmax Host Persistent: 0 Device Persistent: 0 Scratch Memory: 0
+[11/08/2024-09:04:38] [I] [TRT] Total Host Persistent Memory: 16000
+[11/08/2024-09:04:38] [I] [TRT] Total Device Persistent Memory: 11395072
+[11/08/2024-09:04:38] [I] [TRT] Total Scratch Memory: 0
+[11/08/2024-09:04:38] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 18 MiB, GPU 25 MiB
+[11/08/2024-09:04:38] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 0.33088ms to assign 3 blocks to 18 nodes requiring 4194305 bytes.
+[11/08/2024-09:04:38] [V] [TRT] Optimized block assignment.
+[11/08/2024-09:04:38] [V] [TRT] Block size 2097152
+[11/08/2024-09:04:38] [V] [TRT] Block size 2097152
+[11/08/2024-09:04:38] [V] [TRT] Block size 1
+[11/08/2024-09:04:38] [I] [TRT] Total Activation Memory: 4194305
+[11/08/2024-09:04:38] [V] [TRT] Engine generation completed in 17.8598 seconds.
+[11/08/2024-09:04:38] [V] [TRT] Deleting timing cache: 45 entries, 10 hits
+[11/08/2024-09:04:38] [V] [TRT] Engine Layer Information:
+Layer(CaskConvolution): /conv1/Conv + /Relu, Tactic: 1754984623894446479, input[Float(1,3,128,128)] -> /Relu_output_0[Float(1,32,128,128)]
+Layer(CaskConvolution): /conv2/Conv + /Relu_1, Tactic: -1343271414618805657, /Relu_output_0[Float(1,32,128,128)] -> /Relu_1_output_0[Float(1,32,128,128)]
+Layer(TiledPooling): /pool/MaxPool, Tactic: 5701889, /Relu_1_output_0[Float(1,32,128,128)] -> /pool/MaxPool_output_0[Float(1,32,64,64)]
+Layer(CaskConvolution): /conv3/Conv + /Relu_2, Tactic: -1343271414618805657, /pool/MaxPool_output_0[Float(1,32,64,64)] -> /Relu_2_output_0[Float(1,64,64,64)]
+Layer(TiledPooling): /pool_1/MaxPool, Tactic: 6488321, /Relu_2_output_0[Float(1,64,64,64)] -> /pool_1/MaxPool_output_0[Float(1,64,32,32)]
+Layer(CaskConvolution): /conv4/Conv + /Relu_3, Tactic: -1343271414618805657, /pool_1/MaxPool_output_0[Float(1,64,32,32)] -> /Relu_3_output_0[Float(1,96,32,32)]
+Layer(TiledPooling): /pool_2/MaxPool, Tactic: 6357249, /Relu_3_output_0[Float(1,96,32,32)] -> /pool_2/MaxPool_output_0[Float(1,96,16,16)]
+Layer(CaskConvolution): /conv5/Conv + /Relu_4, Tactic: -1343271414618805657, /pool_2/MaxPool_output_0[Float(1,96,16,16)] -> /Relu_4_output_0[Float(1,96,16,16)]
+Layer(TiledPooling): /pool_3/MaxPool, Tactic: 6422785, /Relu_4_output_0[Float(1,96,16,16)] -> /pool_3/MaxPool_output_0[Float(1,96,8,8)]
+Layer(NoOp): /Reshape, Tactic: 0, /pool_3/MaxPool_output_0[Float(1,96,8,8)] -> /Reshape_output_0[Float(1,6144)]
+Layer(NoOp): (Unnamed Layer* 15) [Shuffle], Tactic: 0, /Reshape_output_0[Float(1,6144)] -> (Unnamed Layer* 15) [Shuffle]_output[Float(1,6144,1,1)]
+Layer(CaskConvolution): /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu, Tactic: 5137655947464784826, (Unnamed Layer* 15) [Shuffle]_output[Float(1,6144,1,1)] -> /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu[Float(1,384,1,1)]
+Layer(CaskConvolution): /heads.0/fc_2_phone/Gemm, Tactic: 1698681053543049347, /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu[Float(1,128,1,1)] -> (Unnamed Layer* 20) [Fully Connected]_output[Float(1,5,1,1)]
+Layer(NoOp): (Unnamed Layer* 21) [Shuffle] + (Unnamed Layer* 22) [Shuffle], Tactic: 0, (Unnamed Layer* 20) [Fully Connected]_output[Float(1,5,1,1)] -> (Unnamed Layer* 22) [Shuffle]_output[Float(1,5)]
+Layer(CudaSoftMax): /heads.0/softmax_phone/Softmax, Tactic: 1001, (Unnamed Layer* 22) [Shuffle]_output[Float(1,5)] -> probs_phone[Float(1,5)]
+Layer(CaskConvolution): /heads.1/fc_2_gaze/Gemm, Tactic: 1698681053543049347, /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu[Float(1,128,1,1)] -> (Unnamed Layer* 30) [Fully Connected]_output[Float(1,5,1,1)]
+Layer(NoOp): (Unnamed Layer* 31) [Shuffle] + (Unnamed Layer* 32) [Shuffle], Tactic: 0, (Unnamed Layer* 30) [Fully Connected]_output[Float(1,5,1,1)] -> (Unnamed Layer* 32) [Shuffle]_output[Float(1,5)]
+Layer(CudaSoftMax): /heads.1/softmax_gaze/Softmax, Tactic: 1001, (Unnamed Layer* 32) [Shuffle]_output[Float(1,5)] -> probs_gaze[Float(1,5)]
+Layer(CaskConvolution): /heads.2/fc_2_headset/Gemm, Tactic: 7144526460361122478, /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu[Float(1,128,1,1)] -> (Unnamed Layer* 40) [Fully Connected]_output[Float(1,3,1,1)]
+Layer(NoOp): (Unnamed Layer* 41) [Shuffle] + (Unnamed Layer* 42) [Shuffle], Tactic: 0, (Unnamed Layer* 40) [Fully Connected]_output[Float(1,3,1,1)] -> (Unnamed Layer* 42) [Shuffle]_output[Float(1,3)]
+Layer(CudaSoftMax): /heads.2/softmax_headset/Softmax, Tactic: 1001, (Unnamed Layer* 42) [Shuffle]_output[Float(1,3)] -> probs_headset[Float(1,3)]
+[11/08/2024-09:04:38] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +9, GPU +16, now: CPU 9, GPU 16 (MiB)
+[11/08/2024-09:04:38] [I] [TRT] [MemUsageChange] Init CUDA: CPU +0, GPU +0, now: CPU 338, GPU 3753 (MiB)
+[11/08/2024-09:04:38] [I] [TRT] Loaded engine size: 10 MiB
+[11/08/2024-09:04:38] [V] [TRT] Deserialization required 9281 microseconds.
+[11/08/2024-09:04:38] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +10, now: CPU 0, GPU 10 (MiB)
+[11/08/2024-09:04:38] [I] Engine built in 20.9404 sec.
+[11/08/2024-09:04:38] [V] [TRT] Total per-runner device persistent memory is 11395072
+[11/08/2024-09:04:38] [V] [TRT] Total per-runner host persistent memory is 16000
+[11/08/2024-09:04:38] [V] [TRT] Allocated activation device memory of size 4194816
+[11/08/2024-09:04:38] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +15, now: CPU 0, GPU 25 (MiB)
+[11/08/2024-09:04:38] [I] Using random values for input input
+[11/08/2024-09:04:38] [I] Created input binding for input with dimensions 1x3x128x128
+[11/08/2024-09:04:38] [I] Using random values for output probs_phone
+[11/08/2024-09:04:38] [I] Created output binding for probs_phone with dimensions 1x5
+[11/08/2024-09:04:38] [I] Using random values for output probs_gaze
+[11/08/2024-09:04:38] [I] Created output binding for probs_gaze with dimensions 1x5
+[11/08/2024-09:04:38] [I] Using random values for output probs_headset
+[11/08/2024-09:04:38] [I] Created output binding for probs_headset with dimensions 1x3
+[11/08/2024-09:04:38] [I] Starting inference
+[11/08/2024-09:04:41] [I] Warmup completed 54 queries over 200 ms
+[11/08/2024-09:04:41] [I] Timing trace has 669 queries over 3.01407 s
+[11/08/2024-09:04:41] [I] 
+[11/08/2024-09:04:41] [I] === Trace details ===
+[11/08/2024-09:04:41] [I] Trace averages of 10 runs:
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.70255 ms - Host latency: 3.71949 ms (end to end 4.00327 ms, enqueue 0.501608 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.76414 ms - Host latency: 3.78289 ms (end to end 3.93258 ms, enqueue 0.83774 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.91267 ms - Host latency: 2.92976 ms (end to end 3.03284 ms, enqueue 0.53956 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.97289 ms - Host latency: 2.99107 ms (end to end 3.11531 ms, enqueue 0.620956 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.65502 ms - Host latency: 4.67422 ms (end to end 5.21954 ms, enqueue 0.580042 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.99275 ms - Host latency: 4.00979 ms (end to end 4.36411 ms, enqueue 0.579443 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.69049 ms - Host latency: 3.72177 ms (end to end 3.92858 ms, enqueue 0.619061 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.86228 ms - Host latency: 2.87961 ms (end to end 2.88639 ms, enqueue 0.461798 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.06183 ms - Host latency: 3.08066 ms (end to end 3.11382 ms, enqueue 0.615121 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.92124 ms - Host latency: 3.93984 ms (end to end 4.32077 ms, enqueue 0.605463 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.4084 ms - Host latency: 4.42649 ms (end to end 5.05598 ms, enqueue 0.569434 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.85858 ms - Host latency: 4.87659 ms (end to end 5.48994 ms, enqueue 0.609393 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.83843 ms - Host latency: 5.85834 ms (end to end 7.02468 ms, enqueue 0.568115 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.55645 ms - Host latency: 5.57631 ms (end to end 6.75148 ms, enqueue 0.576385 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.35712 ms - Host latency: 4.37557 ms (end to end 5.06606 ms, enqueue 0.919629 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.14244 ms - Host latency: 5.16232 ms (end to end 6.0235 ms, enqueue 0.571881 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.6556 ms - Host latency: 3.67288 ms (end to end 4.02961 ms, enqueue 0.607764 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.55707 ms - Host latency: 3.57538 ms (end to end 3.75007 ms, enqueue 0.629828 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.87933 ms - Host latency: 4.89811 ms (end to end 5.7333 ms, enqueue 0.626886 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.50382 ms - Host latency: 3.52203 ms (end to end 3.99021 ms, enqueue 0.553931 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.94956 ms - Host latency: 2.97334 ms (end to end 3.10605 ms, enqueue 0.597302 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.54441 ms - Host latency: 4.56312 ms (end to end 5.18259 ms, enqueue 0.699341 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.04113 ms - Host latency: 4.08037 ms (end to end 4.46696 ms, enqueue 0.609277 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.66117 ms - Host latency: 3.69607 ms (end to end 3.96093 ms, enqueue 0.724548 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.89388 ms - Host latency: 2.91187 ms (end to end 2.91964 ms, enqueue 0.804749 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.99789 ms - Host latency: 3.02275 ms (end to end 3.1502 ms, enqueue 0.60061 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.41923 ms - Host latency: 4.43833 ms (end to end 4.93638 ms, enqueue 0.590088 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.95303 ms - Host latency: 3.97094 ms (end to end 4.5632 ms, enqueue 0.563892 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.65144 ms - Host latency: 3.68126 ms (end to end 3.88835 ms, enqueue 0.565894 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.88719 ms - Host latency: 2.90541 ms (end to end 2.91245 ms, enqueue 0.548792 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.0542 ms - Host latency: 3.07245 ms (end to end 3.0887 ms, enqueue 0.569177 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.52058 ms - Host latency: 3.53812 ms (end to end 3.80924 ms, enqueue 0.544141 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.7678 ms - Host latency: 4.78689 ms (end to end 5.52553 ms, enqueue 0.561597 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.03794 ms - Host latency: 4.05593 ms (end to end 4.55631 ms, enqueue 0.587305 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.81759 ms - Host latency: 5.83834 ms (end to end 7.00779 ms, enqueue 0.617822 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.70238 ms - Host latency: 5.72269 ms (end to end 6.88646 ms, enqueue 0.570264 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.78809 ms - Host latency: 4.80669 ms (end to end 5.65875 ms, enqueue 0.649646 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.21635 ms - Host latency: 5.23599 ms (end to end 6.18186 ms, enqueue 0.591785 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.36696 ms - Host latency: 3.3847 ms (end to end 3.76278 ms, enqueue 0.546948 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.67953 ms - Host latency: 4.8373 ms (end to end 5.56515 ms, enqueue 0.578564 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.84233 ms - Host latency: 3.86014 ms (end to end 4.1928 ms, enqueue 0.578101 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.37019 ms - Host latency: 3.38794 ms (end to end 3.67842 ms, enqueue 0.546362 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.0512 ms - Host latency: 3.06924 ms (end to end 3.10571 ms, enqueue 0.569946 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.72583 ms - Host latency: 3.74392 ms (end to end 4.05454 ms, enqueue 0.519556 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.4905 ms - Host latency: 4.50903 ms (end to end 5.26677 ms, enqueue 0.606396 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.77637 ms - Host latency: 3.79468 ms (end to end 4.03784 ms, enqueue 0.599048 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.02053 ms - Host latency: 3.03826 ms (end to end 3.08804 ms, enqueue 0.600024 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.10188 ms - Host latency: 3.12639 ms (end to end 3.13518 ms, enqueue 0.670947 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.2052 ms - Host latency: 3.22258 ms (end to end 3.30012 ms, enqueue 0.487964 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.00662 ms - Host latency: 5.02571 ms (end to end 5.9447 ms, enqueue 0.887988 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.7144 ms - Host latency: 3.73237 ms (end to end 4.02429 ms, enqueue 0.633667 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.04077 ms - Host latency: 3.05815 ms (end to end 3.07471 ms, enqueue 0.52583 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.09563 ms - Host latency: 3.11436 ms (end to end 3.12139 ms, enqueue 0.566675 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 2.99536 ms - Host latency: 3.01299 ms (end to end 3.02986 ms, enqueue 0.483936 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.22998 ms - Host latency: 5.2501 ms (end to end 6.19741 ms, enqueue 0.57102 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.25295 ms - Host latency: 4.271 ms (end to end 4.6873 ms, enqueue 0.554468 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.52075 ms - Host latency: 5.53984 ms (end to end 6.59387 ms, enqueue 0.601318 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.56584 ms - Host latency: 5.58516 ms (end to end 6.76187 ms, enqueue 0.633569 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.9469 ms - Host latency: 4.96584 ms (end to end 5.91243 ms, enqueue 0.697778 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 5.59121 ms - Host latency: 5.61099 ms (end to end 6.58589 ms, enqueue 0.633691 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.42354 ms - Host latency: 3.44043 ms (end to end 3.65647 ms, enqueue 0.541553 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 4.91038 ms - Host latency: 4.93645 ms (end to end 5.66428 ms, enqueue 0.572534 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.48074 ms - Host latency: 3.49863 ms (end to end 4.05203 ms, enqueue 0.578223 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.4343 ms - Host latency: 3.45239 ms (end to end 3.63892 ms, enqueue 0.560767 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.09922 ms - Host latency: 3.1189 ms (end to end 3.12578 ms, enqueue 0.555884 ms)
+[11/08/2024-09:04:41] [I] Average on 10 runs - GPU latency: 3.02092 ms - Host latency: 3.03882 ms (end to end 3.05596 ms, enqueue 0.523389 ms)
+[11/08/2024-09:04:41] [I] 
+[11/08/2024-09:04:41] [I] === Performance summary ===
+[11/08/2024-09:04:41] [I] Throughput: 221.959 qps
+[11/08/2024-09:04:41] [I] Latency: min = 2.80249 ms, max = 8.2616 ms, mean = 4.0432 ms, median = 3.21619 ms, percentile(99%) = 6.85663 ms
+[11/08/2024-09:04:41] [I] End-to-End Host Latency: min = 2.80908 ms, max = 9.37329 ms, mean = 4.49594 ms, median = 3.37402 ms, percentile(99%) = 8.02661 ms
+[11/08/2024-09:04:41] [I] Enqueue Time: min = 0.374878 ms, max = 3.77649 ms, mean = 0.602928 ms, median = 0.561584 ms, percentile(99%) = 1.74585 ms
+[11/08/2024-09:04:41] [I] H2D Latency: min = 0.0108643 ms, max = 1.40027 ms, mean = 0.0165938 ms, median = 0.0129395 ms, percentile(99%) = 0.0756836 ms
+[11/08/2024-09:04:41] [I] GPU Compute Time: min = 2.78394 ms, max = 6.98224 ms, mean = 4.02137 ms, median = 3.19958 ms, percentile(99%) = 6.83661 ms
+[11/08/2024-09:04:41] [I] D2H Latency: min = 0.00268555 ms, max = 0.0078125 ms, mean = 0.00523338 ms, median = 0.00537109 ms, percentile(99%) = 0.00708008 ms
+[11/08/2024-09:04:41] [I] Total Host Walltime: 3.01407 s
+[11/08/2024-09:04:41] [I] Total GPU Compute Time: 2.6903 s
+[11/08/2024-09:04:41] [I] Explanations of the performance metrics are printed in the verbose logs.
+[11/08/2024-09:04:41] [V] 
+[11/08/2024-09:04:41] [V] === Explanations of the performance metrics ===
+[11/08/2024-09:04:41] [V] Total Host Walltime: the host walltime from when the first query (after warmups) is enqueued to when the last query is completed.
+[11/08/2024-09:04:41] [V] GPU Compute Time: the GPU latency to execute the kernels for a query.
+[11/08/2024-09:04:41] [V] Total GPU Compute Time: the summation of the GPU Compute Time of all the queries. If this is significantly shorter than Total Host Walltime, the GPU may be under-utilized because of host-side overheads or data transfers.
+[11/08/2024-09:04:41] [V] Throughput: the observed throughput computed by dividing the number of queries by the Total Host Walltime. If this is significantly lower than the reciprocal of GPU Compute Time, the GPU may be under-utilized because of host-side overheads or data transfers.
+[11/08/2024-09:04:41] [V] Enqueue Time: the host latency to enqueue a query. If this is longer than GPU Compute Time, the GPU may be under-utilized.
+[11/08/2024-09:04:41] [V] H2D Latency: the latency for host-to-device data transfers for input tensors of a single query.
+[11/08/2024-09:04:41] [V] D2H Latency: the latency for device-to-host data transfers for output tensors of a single query.
+[11/08/2024-09:04:41] [V] Latency: the summation of H2D Latency, GPU Compute Time, and D2H Latency. This is the latency to infer a single query.
+[11/08/2024-09:04:41] [V] End-to-End Host Latency: the duration from when the H2D of a query is called to when the D2H of the same query is completed, which includes the latency to wait for the completion of the previous query. This is the latency of a query if multiple queries are enqueued consecutively.
+[11/08/2024-09:04:41] [I] 
+[11/08/2024-09:04:44] [I] 
+[11/08/2024-09:04:44] [I] === Profile (641 iterations ) ===
+[11/08/2024-09:04:44] [I]                                                                                                                                                                      Layer   Time (ms)   Avg. Time (ms)   Time %
+[11/08/2024-09:04:44] [I]                                                                                                                                                        /conv1/Conv + /Relu      180.08           0.2809      7.3
+[11/08/2024-09:04:44] [I]                                                                                                                                                      /conv2/Conv + /Relu_1      361.61           0.5641     14.6
+[11/08/2024-09:04:44] [I]                                                                                                                                                              /pool/MaxPool       61.35           0.0957      2.5
+[11/08/2024-09:04:44] [I]                                                                                                                                                      /conv3/Conv + /Relu_2      388.30           0.6058     15.7
+[11/08/2024-09:04:44] [I]                                                                                                                                                            /pool_1/MaxPool       36.80           0.0574      1.5
+[11/08/2024-09:04:44] [I]                                                                                                                                                      /conv4/Conv + /Relu_3      112.93           0.1762      4.6
+[11/08/2024-09:04:44] [I]                                                                                                                                                            /pool_2/MaxPool       14.55           0.0227      0.6
+[11/08/2024-09:04:44] [I]                                                                                                                                                      /conv5/Conv + /Relu_4       42.94           0.0670      1.7
+[11/08/2024-09:04:44] [I]                                                                                                                                                            /pool_3/MaxPool        8.16           0.0127      0.3
+[11/08/2024-09:04:44] [I]                                                                                                                                                                   /Reshape        0.40           0.0006      0.0
+[11/08/2024-09:04:44] [I]                                                                                                                                              (Unnamed Layer* 15) [Shuffle]        0.39           0.0006      0.0
+[11/08/2024-09:04:44] [I]  /heads.0/fc_1_phone/Gemm + /heads.0/relu_1_phone/Relu || /heads.1/fc_1_gaze/Gemm + /heads.1/relu_1_gaze/Relu || /heads.2/fc_1_headset/Gemm + /heads.2/relu_1_headset/Relu     1136.89           1.7736     45.9
+[11/08/2024-09:04:44] [I]                                                                                                                                                   /heads.0/fc_2_phone/Gemm       42.74           0.0667      1.7
+[11/08/2024-09:04:44] [I]                                                                                                              (Unnamed Layer* 21) [Shuffle] + (Unnamed Layer* 22) [Shuffle]        0.43           0.0007      0.0
+[11/08/2024-09:04:44] [I]                                                                                                                                             /heads.0/softmax_phone/Softmax        6.20           0.0097      0.3
+[11/08/2024-09:04:44] [I]                                                                                                                                                    /heads.1/fc_2_gaze/Gemm       19.57           0.0305      0.8
+[11/08/2024-09:04:44] [I]                                                                                                              (Unnamed Layer* 31) [Shuffle] + (Unnamed Layer* 32) [Shuffle]        0.42           0.0006      0.0
+[11/08/2024-09:04:44] [I]                                                                                                                                              /heads.1/softmax_gaze/Softmax        4.57           0.0071      0.2
+[11/08/2024-09:04:44] [I]                                                                                                                                                 /heads.2/fc_2_headset/Gemm       50.22           0.0783      2.0
+[11/08/2024-09:04:44] [I]                                                                                                              (Unnamed Layer* 41) [Shuffle] + (Unnamed Layer* 42) [Shuffle]        0.43           0.0007      0.0
+[11/08/2024-09:04:44] [I]                                                                                                                                           /heads.2/softmax_headset/Softmax        8.11           0.0126      0.3
+[11/08/2024-09:04:44] [I]                                                                                                                                                                      Total     2477.09           3.8644    100.0
+[11/08/2024-09:04:44] [I] 
+&&&& PASSED TensorRT.trtexec [TensorRT v8201] # /usr/src/tensorrt/bin/trtexec --onnx=/home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.onnx --saveEngine=/home/ubuntu/ashok/Backtesting/model_files/FINAL_2/FINAL_bn_copied.trt --verbose --dumpProfile --separateProfileRun --tacticSources=-CUDNN,-CUBLAS_LT,-CUBLAS --workspace=2048

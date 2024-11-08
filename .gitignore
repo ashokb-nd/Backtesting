@@ -1,0 +1,3 @@
+samples/*
+model_files/*
+trt_outputs/*
